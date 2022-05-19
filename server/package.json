@@ -5,17 +5,23 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
-    "prisma-studio": "npx prisma studio"
+    "prisma-studio": "npx prisma studio",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@swc/core": "^1.2.186",
+    "@swc/jest": "^0.2.21",
     "@types/express": "^4.17.13",
+    "@types/jest": "^27.5.1",
     "@types/node": "^17.0.31",
     "@types/nodemailer": "^6.4.4",
     "@types/uuid": "^8.3.4",
+    "jest": "^28.1.0",
     "prisma": "^3.13.0",
+    "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.4"
   },
