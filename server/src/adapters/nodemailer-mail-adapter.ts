@@ -11,7 +11,7 @@ const transport = nodemailer.createTransport({
 });
 
 export class NodemailerMailAdapter implements MailAdapter {
-  async sendmail({ subject, body }: SendMailData) {
+  async sendMail({ subject, body }: SendMailData) {
     await transport.sendMail({
       from: "Equipe Feedback Widget <oi@feedbackwidget.com>",
       to: "Jozias Martini <jozias.martini@gmail.com>",
